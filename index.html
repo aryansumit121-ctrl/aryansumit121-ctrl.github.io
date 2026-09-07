@@ -3,281 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kumar Sumit — Research Scholar, Library & Information Science</title>
-<meta name="description" content="Kumar Sumit — PhD researcher in Library and Information Science, Mizoram University. Semantic retrieval, knowledge organization, multilingual and Indigenous information access.">
+<title>Kumar Sumit — AI, Semantic Retrieval & Knowledge Organization Researcher</title>
+<meta name="description" content="Kumar Sumit — PhD researcher, Mizoram University. Computational approaches to semantic retrieval, knowledge organization, multilingual information access, and scholarly communication. Seeking visiting-researcher collaborations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper: #F1ECDD;
-    --paper-raised: #FAF7EE;
-    --ink: #211E17;
-    --ink-soft: #5B5646;
-    --indigo: #2E4374;
-    --indigo-deep: #1F2E52;
-    --stamp: #9C3B3B;
-    --line: #CBC0A0;
-    --line-soft: #DED5B9;
-    --maxw: 780px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Source Serif 4', Georgia, serif;
-    font-size:18px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  .mono{
-    font-family:'IBM Plex Mono', 'Courier New', monospace;
-    letter-spacing:0.01em;
-  }
-  a{color:var(--indigo);}
-  a:hover{color:var(--stamp);}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
-
-  /* ---------- Nav (drawer tabs) ---------- */
-  nav{
-    position:sticky; top:0; z-index:50;
-    background:var(--paper);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    max-width:var(--maxw); margin:0 auto; padding:0 24px;
-    display:flex; align-items:center; justify-content:space-between;
-    height:56px;
-  }
-  .nav-name{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px; font-weight:500;
-    color:var(--ink);
-    text-decoration:none;
-  }
-  .tabs{display:flex; gap:0; list-style:none; margin:0; padding:0;}
-  .tabs a{
-    display:block;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    color:var(--ink-soft);
-    text-decoration:none;
-    padding:8px 12px;
-    border-left:1px solid var(--line-soft);
-  }
-  .tabs a:hover{color:var(--indigo); background:var(--paper-raised);}
-  .tabs a:last-child{border-right:1px solid var(--line-soft);}
-  #nav-toggle{display:none;}
-  .burger{display:none;}
-
-  @media (max-width:640px){
-    .tabs{
-      position:absolute; top:56px; left:0; right:0;
-      background:var(--paper-raised);
-      flex-direction:column;
-      border-bottom:1px solid var(--line);
-      display:none;
-    }
-    .tabs a{border-left:none; border-top:1px solid var(--line-soft); padding:12px 24px;}
-    #nav-toggle:checked ~ .tabs{display:flex;}
-    .burger{
-      display:block; background:none; border:none; cursor:pointer;
-      font-family:'IBM Plex Mono', monospace; font-size:12px;
-      color:var(--ink); letter-spacing:0.06em;
-    }
-  }
-
-  /* ---------- Hero: the accession card ---------- */
-  .hero{padding:56px 0 40px;}
-  .card{
-    background:var(--paper-raised);
-    border:1px solid var(--line);
-    padding:40px 36px;
-    position:relative;
-  }
-  .stamp-badge{
-    position:absolute;
-    top:-14px; right:28px;
-    transform:rotate(-4deg);
-    border:1.5px solid var(--stamp);
-    color:var(--stamp);
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    padding:5px 10px;
-    background:var(--paper-raised);
-  }
-  .accession-label{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--ink-soft);
-    margin-bottom:18px;
-  }
-  h1.name{
-    font-size:2.5rem;
-    font-weight:600;
-    margin:0 0 6px;
-    line-height:1.15;
-  }
-  .role{
-    color:var(--ink-soft);
-    font-size:1.05rem;
-    margin:0 0 24px;
-  }
-  .role strong{color:var(--ink); font-weight:500;}
-  .tagline{
-    font-size:1.15rem;
-    max-width:60ch;
-    margin:0 0 28px;
-    color:var(--ink);
-  }
-  .link-row{
-    display:flex; flex-wrap:wrap; gap:10px 18px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px;
-  }
-  .link-row a{
-    text-decoration:none;
-    border-bottom:1px solid var(--line);
-    padding-bottom:2px;
-  }
-  .link-row a:hover{border-color:var(--stamp);}
-
-  /* ---------- Section framework ---------- */
-  section{padding:44px 0;}
-  section + section{border-top:1px solid var(--line-soft);}
-  .section-head{
-    display:flex; align-items:baseline; gap:14px;
-    margin-bottom:26px;
-  }
-  .call-number{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-    white-space:nowrap;
-  }
-  h2{
-    font-size:1.5rem;
-    font-weight:600;
-    margin:0;
-  }
-  p{margin:0 0 14px; max-width:68ch;}
-
-  /* ---------- Subject headings (research interests) ---------- */
-  .subject-list{
-    list-style:none; margin:0; padding:0;
-    display:flex; flex-wrap:wrap; gap:8px 10px;
-  }
-  .subject-list li{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    color:var(--indigo-deep);
-    border:1px solid var(--line);
-    padding:5px 10px;
-  }
-
-  /* ---------- Education ---------- */
-  .edu-item{
-    display:grid;
-    grid-template-columns:110px 1fr;
-    gap:16px;
-    padding:12px 0;
-    border-top:1px solid var(--line-soft);
-  }
-  .edu-item:first-child{border-top:none;}
-  .edu-date{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-soft);}
-  .edu-title{font-weight:600; margin-bottom:2px;}
-  .edu-sub{color:var(--ink-soft); font-size:0.95rem;}
-
-  /* ---------- Publications ---------- */
-  .pub-group{margin-bottom:34px;}
-  .pub-group:last-child{margin-bottom:0;}
-  .pub-group-title{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    color:var(--indigo);
-    margin-bottom:14px;
-  }
-  .pub{
-    padding:16px 0;
-    border-top:1px solid var(--line-soft);
-    display:grid;
-    grid-template-columns:56px 1fr;
-    gap:16px;
-  }
-  .pub:first-child{border-top:none;}
-  .pub-year{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--ink-soft); padding-top:2px;}
-  .pub-title{font-weight:600; margin-bottom:4px;}
-  .pub-title a{text-decoration:none;}
-  .pub-title a:hover{color:var(--stamp);}
-  .pub-meta{color:var(--ink-soft); font-size:0.92rem; margin-bottom:6px;}
-  .pub-tag{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:10.5px;
-    text-transform:uppercase;
-    letter-spacing:0.05em;
-    color:var(--stamp);
-    border:1px solid var(--stamp);
-    padding:2px 6px;
-    display:inline-block;
-  }
-
-  /* ---------- Projects ---------- */
-  .proj-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:1px;
-    background:var(--line-soft);
-    border:1px solid var(--line-soft);
-  }
-  .proj{
-    background:var(--paper-raised);
-    padding:20px;
-  }
-  .proj-name{
-    font-family:'IBM Plex Mono', monospace;
-    font-weight:500;
-    font-size:14px;
-    margin-bottom:8px;
-  }
-  .proj-name a{text-decoration:none;}
-  .proj-desc{font-size:0.92rem; color:var(--ink-soft); margin:0;}
-  @media (max-width:640px){
-    .proj-grid{grid-template-columns:1fr;}
-    .edu-item{grid-template-columns:1fr; gap:2px;}
-    .pub{grid-template-columns:1fr; gap:4px;}
-    h1.name{font-size:2rem;}
-  }
-
-  /* ---------- Achievements / IP ---------- */
-  .plain-list{margin:0; padding-left:0; list-style:none;}
-  .plain-list li{
-    padding:10px 0;
-    border-top:1px solid var(--line-soft);
-  }
-  .plain-list li:first-child{border-top:none;}
-
-  /* ---------- Footer ---------- */
-  footer{
-    padding:40px 0 60px;
-    border-top:1px solid var(--line-soft);
-  }
-  footer .link-row{margin-bottom:16px;}
-  .updated{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11.5px;
-    color:var(--ink-soft);
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -287,70 +18,100 @@
     <input type="checkbox" id="nav-toggle">
     <label for="nav-toggle" class="burger">MENU</label>
     <ul class="tabs">
-      <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="research-visit.html" class="cta-tab">Research Visit</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#recognition">Recognition</a></li>
+      <li><a href="Kumar_Sumit_CV.pdf" target="_blank" rel="noopener">CV</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <div id="top" class="wrap hero">
-  <div class="card">
-    <div class="stamp-badge">JRF · 99.908 %ile</div>
-    <div class="accession-label">Research Scholar — Accession Record</div>
-    <h1 class="name">Kumar Sumit</h1>
-    <p class="role">
-      <strong>PhD Researcher</strong>, Department of Library and Information Science<br>
-      Mizoram University, Aizawl
-    </p>
-    <p class="tagline">
-      I work on getting libraries and retrieval systems to understand meaning, not just keywords —
-      across languages, scripts, and Indigenous knowledge systems that mainstream AI tools tend to overlook.
-    </p>
-    <div class="link-row">
-      <a href="https://www.researchgate.net/profile/Kumar-Sumit-6" target="_blank" rel="noopener">ResearchGate</a>
-      <a href="https://scholar.google.com/citations?user=8TjJp0sAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://github.com/aryansumit121-ctrl" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://orcid.org/0009-0007-6298-2133" target="_blank" rel="noopener">ORCID</a>
-      <a href="mailto:aryan.sumit121@gmail.com">Email</a>
+  <div class="hero-grid">
+    <div>
+      <div class="accession-label">Research Scholar — Accession Record</div>
+      <h1 class="name">Kumar Sumit</h1>
+      <p class="role">PhD Researcher · AI · Semantic Retrieval · Knowledge Organization</p>
+      <p class="statement">
+        I develop computational approaches for representing, retrieving, organizing, and evaluating
+        scholarly and cultural knowledge — with particular interests in semantic search, multilingual
+        information access, knowledge organization, AI for libraries, and scholarly communication.
+      </p>
+      <div class="cta-row">
+        <a href="research-visit.html" class="btn btn-primary">Research Visit</a>
+        <a href="#research" class="btn">Research</a>
+        <a href="Kumar_Sumit_CV.pdf" target="_blank" rel="noopener" class="btn">CV</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+      <div class="link-row">
+        <a href="https://www.researchgate.net/profile/Kumar-Sumit-6" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="https://scholar.google.com/citations?user=8TjJp0sAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/aryansumit121-ctrl" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://orcid.org/0009-0007-6298-2133" target="_blank" rel="noopener">ORCID</a>
+        <a href="mailto:aryan.sumit121@gmail.com">Email</a>
+      </div>
     </div>
+    <div class="hero-photo">
+      <img src="portrait_final.jpg" alt="Portrait of Kumar Sumit">
+      <div class="hero-photo-cap">Kumar Sumit — Aizawl, India</div>
+    </div>
+  </div>
+</div>
+
+<div class="seek-banner">
+  <div class="wrap">
+    <div class="seek-label"><strong>Seeking Visiting Research Opportunities</strong> — universities, research centres, and knowledge-organization / AI labs</div>
+    <a href="research-visit.html">Learn more →</a>
   </div>
 </div>
 
 <div class="wrap">
 
-<section id="about">
-  <div class="section-head">
-    <span class="call-number mono">020&nbsp;SUM</span>
-    <h2>About</h2>
-  </div>
-  <p>
-    I am a PhD researcher in Library and Information Science at Mizoram University, working at the
-    intersection of artificial intelligence, semantic technologies, and digital libraries. My research
-    focuses on computational approaches to knowledge organization, scholarly communication, citation
-    analysis, and multilingual and Indigenous-language information access — with particular attention
-    to research communities and knowledge systems that mainstream retrieval systems tend to underserve.
-  </p>
-  <p>
-    My work sits between two worlds: the technical (semantic search, embeddings, retrieval-augmented
-    systems) and the institutional (how libraries, catalogues, and publishers actually organize and
-    govern knowledge). I qualified UGC-NET with Junior Research Fellowship at the 99.908 percentile,
-    and I hold a Master's in Library and Information Science from Banaras Hindu University.
-  </p>
-</section>
-
 <section id="research">
   <div class="section-head">
     <span class="call-number mono">025.04</span>
-    <h2>Research Interests</h2>
+    <h2>Research at a Glance</h2>
   </div>
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="stat-num">99.908<span style="font-size:0.9rem;">%ile</span></div>
+      <div class="stat-label">UGC-NET, Junior Research Fellowship</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Peer-reviewed publications &amp; preprints</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">5</div>
+      <div class="stat-label">International conference acceptances (IFLA, ASIST, ETD)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Open-source research repositories</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <span class="call-number mono">001.4</span>
+    <h2>Current Research</h2>
+  </div>
+  <p class="lede">
+    My current work centres on the <strong>Indigenous Semantic Retrieval Gap</strong> — the observation that
+    mainstream semantic retrieval systems are trained and evaluated almost entirely on high-resource
+    languages, leaving multilingual and Indigenous-language library collections poorly served. I am
+    developing and evaluating retrieval methods for this gap (filed for copyright protection, Diary No.
+    LD-25312/2026-CO), extending this into hybrid semantic retrieval for electronic thesis and dissertation
+    discovery, and a multilingual semantic OPAC module for the Scheduled Languages of India. In parallel,
+    I use computational and bibliometric methods to study how AI governance is discussed in policy
+    documents and scholarly literature.
+  </p>
   <ul class="subject-list">
+    <li>Semantic Search</li>
     <li>Information Retrieval</li>
-    <li>Semantic Search Systems</li>
     <li>Knowledge Organization</li>
     <li>Multilingual Information Access</li>
     <li>Indigenous Knowledge Organization</li>
@@ -362,7 +123,87 @@
   </ul>
 </section>
 
-<section id="education">
+<section id="publications">
+  <div class="section-head">
+    <span class="call-number mono">028.7</span>
+    <h2>Selected Publications</h2>
+  </div>
+
+  <div class="pub-featured">
+    <div class="pub-title"><a href="https://doi.org/10.56042/alis.v73i2.31022" target="_blank" rel="noopener">AI Governance in Scholarly Publishing: A Computational Analysis of Policy Structures and Gaps</a></div>
+    <div class="pub-meta">Sumit, K., Buragohain, P., &amp; Singh, M. K. (2026) — Annals of Library and Information Studies, 73(2), 195–204</div>
+    <span class="pub-tag">Journal Article</span>
+  </div>
+
+  <div class="pub-featured">
+    <div class="pub-title"><a href="https://www.researchgate.net/publication/412973526" target="_blank" rel="noopener">Mapping a Decade of Health Crisis Research in India (2015–2024): An Integrated Scientometric, Sentiment and Topic Modelling Assessment</a></div>
+    <div class="pub-meta">Buragohain, P., Sumit, K., Tripathi, P., et al., &amp; Singh, M. K. (2026) — Continuity &amp; Resilience Review</div>
+    <span class="pub-tag">Journal Article</span>
+  </div>
+
+  <div class="pub-featured">
+    <div class="pub-title"><a href="https://www.researchgate.net/publication/413926823" target="_blank" rel="noopener">Artificial Intelligence Governance as Policy Discourse: A Computational Analysis of Official Indian Policy Documents</a></div>
+    <div class="pub-meta">Sumit, K., Singh, M. K., &amp; Buragohain, P. (2026) — Annals of Library and Information Studies</div>
+    <span class="pub-tag">Journal Article</span>
+  </div>
+
+  <a href="publications.html" class="view-all">View full publication list →</a>
+</section>
+
+<section id="projects">
+  <div class="section-head">
+    <span class="call-number mono">005.1</span>
+    <h2>Research &amp; Technical Projects</h2>
+  </div>
+  <p>Computational projects supporting the research above. Full code on <a href="https://github.com/aryansumit121-ctrl" target="_blank" rel="noopener">GitHub</a>.</p>
+
+  <div class="proj-grid">
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/Library-sssm/ISRG" target="_blank" rel="noopener">ISRG</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Retrieval quality for multilingual, low-resource library collections</div>
+      <div class="proj-row"><strong>Method</strong>Semantic retrieval methodology development</div>
+      <div class="proj-row"><strong>Outcome</strong>Basis for filed copyright methodology and IFLA WLIC 2026 submission</div>
+    </div>
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/Library-sssm/RAG_final" target="_blank" rel="noopener">RAG_final</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Document and library discovery beyond keyword matching</div>
+      <div class="proj-row"><strong>Method</strong>Retrieval-augmented generation pipeline</div>
+      <div class="proj-row"><strong>Outcome</strong>Working RAG pipeline for library/document discovery</div>
+    </div>
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/Library-sssm/semanticwork_workbench" target="_blank" rel="noopener">semanticwork_workbench</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Comparing semantic search model behaviour</div>
+      <div class="proj-row"><strong>Method</strong>Experimentation workbench for embedding/model comparisons</div>
+      <div class="proj-row"><strong>Outcome</strong>Reusable experimentation environment</div>
+    </div>
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/Library-sssm/ontology" target="_blank" rel="noopener">ontology</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Representing knowledge structures for organization schemas</div>
+      <div class="proj-row"><strong>Method</strong>Ontology design</div>
+      <div class="proj-row"><strong>Outcome</strong>Knowledge-organization schema components</div>
+    </div>
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/aryansumit121-ctrl/lda-topicmodeling" target="_blank" rel="noopener">lda-topicmodeling</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Identifying latent themes in bibliometric corpora</div>
+      <div class="proj-row"><strong>Method</strong>Latent Dirichlet Allocation</div>
+      <div class="proj-row"><strong>Outcome</strong>Topic models used across several published bibliometric studies</div>
+    </div>
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/aryansumit121-ctrl/sentiment_analyser" target="_blank" rel="noopener">sentiment_analyser</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Measuring sentiment in scholarly and discourse text</div>
+      <div class="proj-row"><strong>Method</strong>Sentiment analysis pipeline</div>
+      <div class="proj-row"><strong>Outcome</strong>Applied in scientometric and discourse research, incl. health crisis research study</div>
+    </div>
+    <div class="proj">
+      <div class="proj-name"><a href="https://github.com/Library-sssm/jcdl" target="_blank" rel="noopener">Digital Libraries</a></div>
+      <div class="proj-row"><strong>Research problem</strong>Digital library discovery and system design</div>
+      <div class="proj-row"><strong>Method</strong>Digital libraries research codebase</div>
+      <div class="proj-row"><strong>Outcome</strong>Supporting code for digital libraries research</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
   <div class="section-head">
     <span class="call-number mono">378.24</span>
     <h2>Education</h2>
@@ -389,212 +230,6 @@
       <div class="edu-sub">Banaras Hindu University · 72.5%</div>
     </div>
   </div>
-  <div class="edu-item">
-    <div class="edu-date mono">UGC-NET</div>
-    <div>
-      <div class="edu-title">Junior Research Fellowship (JRF) — Library and Information Science</div>
-      <div class="edu-sub">99.908 percentile, qualified for JRF</div>
-    </div>
-  </div>
-</section>
-
-<section id="publications">
-  <div class="section-head">
-    <span class="call-number mono">028.7</span>
-    <h2>Publications</h2>
-  </div>
-
-  <div class="pub-group">
-    <div class="pub-group-title">Peer-Reviewed Journal Articles</div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://doi.org/10.56042/alis.v73i2.31022" target="_blank" rel="noopener">AI Governance in Scholarly Publishing: A Computational Analysis of Policy Structures and Gaps</a></div>
-        <div class="pub-meta">Sumit, K., Buragohain, P., &amp; Singh, M. K. — Annals of Library and Information Studies, 73(2), 195–204</div>
-        <span class="pub-tag">Journal Article</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://www.researchgate.net/publication/413926823" target="_blank" rel="noopener">Artificial Intelligence Governance as Policy Discourse: A Computational Analysis of Official Indian Policy Documents</a></div>
-        <div class="pub-meta">Sumit, K., Singh, M. K., &amp; Buragohain, P. — Annals of Library and Information Studies</div>
-        <span class="pub-tag">Journal Article</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://www.researchgate.net/publication/412973526" target="_blank" rel="noopener">Mapping a Decade of Health Crisis Research in India (2015–2024): An Integrated Scientometric, Sentiment and Topic Modelling Assessment</a></div>
-        <div class="pub-meta">Buragohain, P., Sumit, K., Tripathi, P., et al., &amp; Singh, M. K. — Continuity &amp; Resilience Review</div>
-        <span class="pub-tag">Journal Article</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="pub-group">
-    <div class="pub-group-title">Preprints</div>
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://www.researchgate.net/publication/413779677" target="_blank" rel="noopener">Does Open Access Matter for Citations? A Topic-Stratified Analysis of Library and Information Science Discipline</a></div>
-        <div class="pub-meta">Kalita, A., Sumit, K., Singh, M. K., &amp; Gupta, D.</div>
-        <span class="pub-tag">Preprint</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="pub-group">
-    <div class="pub-group-title">Conference Proceedings &amp; Book Chapters</div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://www.researchgate.net/publication/406314492" target="_blank" rel="noopener">From Keywords to Connections: Concept-Based Discovery in Multilingual Library Catalogues</a></div>
-        <div class="pub-meta">Sumit, K., Singh, M. K., &amp; Buragohain, P. — In Evolving Information Landscape: Making Libraries Future-Ready, Vol. 1, pp. 421–435</div>
-        <span class="pub-tag">Chapter</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://www.researchgate.net/publication/405160883" target="_blank" rel="noopener">Mapping Scholarly Discourse on Sustainable Agriculture and Environmental Stewardship: A Bibliometric Analysis</a></div>
-        <div class="pub-meta">Sumit, K., Longlen, T., &amp; Tripathi, P. — I-KOAL 2026, Vol. 1, pp. 320–328</div>
-        <span class="pub-tag">Chapter</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title"><a href="https://www.researchgate.net/publication/413927217" target="_blank" rel="noopener">A Scientometric Study of Indian Knowledge Systems in Agriculture: Trends, Keywords, Authors, and Source Impact (1992–2024)</a></div>
-        <div class="pub-meta">Barman, P., Sumit, K., &amp; Chanchinmawia, F. — I-KOAL 2026, Vol. 1, pp. 253–264</div>
-        <span class="pub-tag">Chapter</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="pub-group">
-    <div class="pub-group-title">Accepted Abstracts &amp; Conference Acceptances</div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title">Is Semantic Retrieval Enough? A Design Science Approach to the Indigenous Semantic Retrieval Gap in Multilingual Low-Resource Library Environments</div>
-        <div class="pub-meta">Accepted for presentation — IFLA World Library and Information Congress (WLIC) 2026</div>
-        <span class="pub-tag">Abstract</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title">From Metadata to Knowledge Graphs: Reimagining ETD Discovery Using Hybrid Semantic Retrieval</div>
-        <div class="pub-meta">Abstract accepted — ETD 2026 (full paper in progress)</div>
-        <span class="pub-tag">Abstract</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title">"Beyond Publication Growth: Measuring Semantic Maturity in Scholarly Topics" (Long Paper) — ASIST SIG-METS/STI Symposium</div>
-        <div class="pub-meta">ASIST Annual Meeting 2026</div>
-        <span class="pub-tag">Long Paper</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title">Design, Development and Evaluation of a Multilingual Semantic Library OPAC Module
-for Scheduled Languages of India</div>
-        <div class="pub-meta">ASIST Annual Meeting 2026 — Accepted</div>
-        <span class="pub-tag">Colloquium</span>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-year mono">2026</div>
-      <div>
-        <div class="pub-title">Bridging Representation Gaps: Culturally Grounded Retrieval in Indigenous Multilingual OPAC-</div>
-        <div class="pub-meta">ASIST Annual Meeting 2026 — Accepted</div>
-        <span class="pub-tag">Poster</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="pub-group">
-    <div class="pub-group-title">Manuscripts Under Review</div>
-    <div class="pub">
-      <div class="pub-year mono">—</div>
-      <div>
-        <div class="pub-title">Manuscript under revision</div>
-        <div class="pub-meta">Semantic Evolution and Citation Dynamics in Library User Services Research: A
-Computational Study (2015–2024)- The Serials Librarian</div>
-        <span class="pub-tag">Under Review</span>
-        <div class="pub-meta">Beyond Semantic Similarity: Bridging the Indigenous Retrieval Gap in Multilingual Digital Libraries- Journal of Information Science</div>
-        <span class="pub-tag">Under Review</span>
-        <div class="pub-meta">Ethnic Fermented Foods in the Digital Arena: Nostalgia, Disgust, Community Monitoring, and Cultural Proximity in YouTube Discoursen
-- Journal of ethnic foods</div>
-        <span class="pub-tag">Under Review</span>
-        <div class="pub-meta">What Keywords Miss: A Comparative Analysis of Bibliometric Mapping and Topic Modeling in Library and Information Science- ALIS</div>
-        <span class="pub-tag">Under Review</span>
-        <div class="pub-meta">Mapping Global Trends and Emerging Themes in Psychoinformatics: Insights from Bibliometric and Topic Modeling Analyses
-- Global Knowledge Memory and Communication</div>
-        <span class="pub-tag">Under Review</span>
-        <div class="pub-meta">Mapping the global research on the Role of Social Policy in Artificial Intelligence Implementation and Planning (2015-2024)
--Global KNowledge Memory and Communication</div>
-        
-
-      
-        <span class="pub-tag">Under Review</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="section-head">
-    <span class="call-number mono">005.1</span>
-    <h2>Projects</h2>
-  </div>
-  <p>Selected code and research tooling. See the full list on <a href="https://github.com/aryansumit121-ctrl" target="_blank" rel="noopener">GitHub</a>.</p>
-
-  <div class="proj-grid">
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/Library-sssm/ISRG" target="_blank" rel="noopener">ISRG</a></div>
-      <p class="proj-desc">Codebase for the Indigenous Semantic Retrieval Gap research — multilingual, low-resource retrieval methods.</p>
-    </div>
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/Library-sssm/RAG_final" target="_blank" rel="noopener">RAG_final</a></div>
-      <p class="proj-desc">Retrieval-augmented generation pipeline built for library/document discovery use cases.</p>
-    </div>
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/Library-sssm/semanticwork_workbench" target="_blank" rel="noopener">semanticwork_workbench</a></div>
-      <p class="proj-desc">Working environment for semantic search experiments and model comparisons.</p>
-    </div>
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/Library-sssm/ontology" target="_blank" rel="noopener">ontology</a></div>
-      <p class="proj-desc">Ontology design and knowledge-organization schema development.</p>
-    </div>
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/aryansumit121-ctrl/lda-topicmodeling" target="_blank" rel="noopener">lda-topicmodeling</a></div>
-      <p class="proj-desc">Topic modeling using Latent Dirichlet Allocation, applied to bibliometric corpora.</p>
-    </div>
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/aryansumit121-ctrl/sentiment_analyser" target="_blank" rel="noopener">sentiment_analyser</a></div>
-      <p class="proj-desc">Sentiment analysis pipeline used in scientometric and discourse research.</p>
-    </div>
-    <div class="proj">
-      <div class="proj-name"><a href="https://github.com/Library-sssm/jcdl" target="_blank" rel="noopener">Digital Libraries</a></div>
-      <p class="proj-desc">Digital libraries research project and supporting code.</p>
-    </div>
-  </div>
 </section>
 
 <section id="recognition">
@@ -605,6 +240,7 @@ Computational Study (2015–2024)- The Serials Librarian</div>
   <ul class="plain-list">
     <li><strong>UGC-NET JRF</strong> — 99.908 percentile, qualified for Junior Research Fellowship</li>
     <li><strong>IFLA WLIC 2026</strong> — Abstract accepted for presentation</li>
+    <li><strong>ASIST Annual Meeting 2026</strong> — Long paper (SIG-METS/STI Symposium), Doctoral Colloquium, and Poster accepted</li>
     <li><strong>Copyright Filed</strong> — Diary No. LD-25312/2026-CO: <em>Indigenous Semantic Retrieval Gap: A Methodology for Multilingual Semantic Retrieval in Low-Resource Multilingual Library Environments</em></li>
     <li><strong>Technical skills</strong> — Python, Streamlit, BERT, IndicBERT v2, MizBERT, SPSS, R, VOSviewer, Zotero</li>
   </ul>
@@ -612,15 +248,28 @@ Computational Study (2015–2024)- The Serials Librarian</div>
 
 </div>
 
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Interested in collaborating or discussing a visiting research opportunity?</h2>
+      <p>I welcome contact from researchers and research groups working on semantic retrieval, knowledge organization, digital libraries, or scholarly communication.</p>
+      <div class="link-row" style="margin-top:18px;">
+        <a href="mailto:aryan.sumit121@gmail.com">aryan.sumit121@gmail.com</a>
+        <a href="https://orcid.org/0009-0007-6298-2133" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=8TjJp0sAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/aryansumit121-ctrl" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.researchgate.net/profile/Kumar-Sumit-6" target="_blank" rel="noopener">ResearchGate</a>
+      </div>
+      <div class="cta-row" style="margin-top:22px; margin-bottom:0;">
+        <a href="Kumar_Sumit_CV.pdf" target="_blank" rel="noopener" class="btn btn-primary">Download CV</a>
+        <a href="research-visit.html" class="btn">Research Visit Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
-    <div class="link-row">
-      <a href="https://www.researchgate.net/profile/Kumar-Sumit-6" target="_blank" rel="noopener">ResearchGate</a>
-      <a href="https://scholar.google.com/citations?user=8TjJp0sAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://github.com/aryansumit121-ctrl" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://orcid.org/0009-0007-6298-2133" target="_blank" rel="noopener">ORCID</a>
-      <a href="mailto:aryan.sumit121@gmail.com">aryan.sumit121@gmail.com</a>
-    </div>
     <div class="updated">Department of Library and Information Science, Mizoram University · Aizawl, India</div>
   </div>
 </footer>
